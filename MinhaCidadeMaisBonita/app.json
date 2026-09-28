@@ -1,25 +1,29 @@
 {
   "expo": {
-    "name": "MinhaCidadeMaisBonita",
-    "slug": "MinhaCidadeMaisBonita",
+    "name": "Minha Cidade mais Bonita",
+    "slug": "minha-cidade-mais-bonita",
     "version": "1.0.0",
+    "scheme": "minhacidadebonita",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "android": { "package": "br.com.educacional.minhacidademaisbonita" },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.educacional.minhacidademaisbonita"
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permita que o aplicativo fotografe a ocorrência urbana."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permita que o aplicativo registre a localização da ocorrência."
+        }
+      ]
+    ]
   }
 }
