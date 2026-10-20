@@ -10,3 +10,5 @@ npx expo install expo-camera expo-location expo-sensors expo-file-system react-n
 npm install @supabase/supabase-js react-native-url-polyfill base64-arraybuffer
 
 npx expo start --clear
+
+npm i
